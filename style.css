@@ -23,7 +23,7 @@ body {
 .hero {
     width: 100vw;
     height: 100vh;
-    /* background-image: url('img/_DSC4067.webp'); */
+    background-image: url('img/_DSC4067.webp');
     background-image: url('img/DSC4048.webp');
     background-size: cover;
     background-position: center center;
@@ -66,5 +66,6 @@ section {
     text-align: center;
     border:1px solid red;
     background-color: #d6d3d1;
+    padding: 150px 0;
 }
 
