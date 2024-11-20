@@ -9,7 +9,9 @@ body {
 }
 
 /* widescreen hero 
-  background-image: url('img/_DSC4067.webp'); */
+  background-image: url('img/_DSC4067.webp');background-position: center right;
+  background-attachment: fixed;
+*/
 
 .hero {
   width: 100vw;
@@ -18,7 +20,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -31,6 +33,12 @@ body {
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-evenly;
+  padding-left: 50px;
+  background-color: hsla(24, 6%, 83%, 0.243);
+}
+
+.title--2{
+    order: -1
 }
 
 .countdown {
@@ -47,6 +55,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: hsla(24, 6%, 83%, 0.291);
 }
 
 section {
@@ -58,3 +67,11 @@ section {
   padding: 150px 0;
 }
 
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    border: 1px solid red;
+}
