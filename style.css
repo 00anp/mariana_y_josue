@@ -8,7 +8,7 @@
   --color-text-light: #FAF6F1;
   --color-background: #FEFAE0;
   --color-overlay: rgba(44, 24, 16, 0.4);
-  --base-url: '/mariana_y_josue';
+
 
 
   /* Tipografía */
@@ -130,7 +130,7 @@ body {
 .hero {
   height: 100vh;
   min-height: -webkit-fill-available;
-  background-image: url('/mariana_y_josue/img/DSC4048.webp');
+  background-image: url('./img/DSC4048.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -196,7 +196,7 @@ body {
   max-width:95vh;
   height: 66vh;
   margin: 1rem auto;
-  background-image: url('/mariana_y_josue/img/DSC04303.webp');
+  background-image: url('./img/DSC04303.webp');
   background-size: cover;
   background-position: center;
   border-radius: var(--border-radius-lg);
@@ -651,7 +651,7 @@ body {
   max-width:95vh;
   height: 85vh;
   margin: 1rem auto;
-  background-image: url('/mariana_y_josue/img/DSC04166.webp');
+  background-image: url('./img/DSC04166.webp');
   background-size: cover;
   background-position: center;
   border-radius: var(--border-radius-lg);
