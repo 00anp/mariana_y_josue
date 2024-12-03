@@ -142,7 +142,7 @@ body {
 
 @media (orientation: landscape) {
   .hero {
-    background-image: url('/mariana_y_josue/img/DSC4067.webp');
+    background-image: url('./img/DSC4067.webp');
   }
 }
 
