@@ -1,202 +1,344 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Mariana y Josué</title>
   </head>
   <body>
     <div class="container">
       <header class="hero">
-        <div class="titles">
-          <h1 class="title--1">Mariana & Josué</h1>
-          <p class="title--2">Cada familia tiene su historia.</p>
-          <h2 class="title--13">Bienvenidos a la nuestra</h2>
+        <div class="titles flex flex-col gap-lg text-light">
+          <h1 class="text-primary text-2xl">Mariana & Josué</h1>
+          <h2 class="text-xl">Bienvenidos a la nuestra</h2>
+          <p class="text-lg">Cada familia tiene su historia.</p>
         </div>
-        <div class="countdown">
-          <div class="box">
-            <span class="num" id="day-box">00</span>
+
+        <div class="countdown-container">
+          <div class="countdown-box">
+            <span class="num text-2xl font-bold" id="day-box">00</span>
             <span class="text">Días</span>
           </div>
-          <div class="box">
-            <span class="num" id="hr-box">00</span>
+          <div class="countdown-box">
+            <span class="num text-2xl font-bold" id="hr-box">00</span>
             <span class="text">Horas</span>
           </div>
-          <div class="box">
-            <span class="num" id="min-box">00</span>
+          <div class="countdown-box">
+            <span class="num text-2xl font-bold" id="min-box">00</span>
             <span class="text">Minutos</span>
           </div>
-          <div class="box">
-            <span class="num" id="sec-box">00</span>
+          <div class="countdown-box">
+            <span class="num text-2xl font-bold" id="sec-box">00</span>
             <span class="text">Segundos</span>
           </div>
         </div>
       </header>
-      <section>
-        <h2>¡Nos casamos!</h2>
-        <p>Celebremos juntos este día tan especial.</p>
-      </section>
-      <section>
-        <h2>Nuestros padrinos</h2>
-        <div class="row">
-          <div class="col">
-            <h3>Isabel Pelayo & Rafael Núñez</h3>
-            <p>Padrinos de velación</p>
-          </div>
-          <div class="col">
-            <h3>Luz María Olivares</h3>
-            <p>Madrina de anillos</p>
-          </div>
-          <div class="col">
-            <h3>Patricia Reyes & Saúl Olivares</h3>
-            <p>Padrinos de arras</p>
-          </div>
-          <div class="col">
-            <h3>Conchita Olivares</h3>
-            <p>Madrina de Lazo</p>
-          </div>
-          <div class="col">
-            <h3>Daniela Sánchez</h3>
-            <p>Padrinos de ramo</p>
+
+      <section class="nos-casamos">
+        <div class="card-container">
+          <div class="text-overlay">
+            <h2 class="text-primary text-2xl m-lg">¡Nos casamos!</h2>
+            <p class="text-center text-lg">
+              Con mucho amor y alegría tenemos el honor de invitarlos a
+              compartir con nosotros el día más especial de nuestras vidas. Será
+              un placer disfrutar juntos este momento tan importante.
+            </p>
           </div>
         </div>
-      </section>
-      <section>
-        <div class="row">
-          <div class="col">
-            <h3>Ceremonia</h3>
-            <p>Sábado 5 de abril 2025</p>
-            <p>1 pm</p>
-            <p>Direccion</p>
-            <a href="">Abrir mapa</a>
-          </div>
-          <div class="col">
-            <h3>Recepción</h3>
-            <p>Sábado 5 de abril 2025</p>
-            <p>2:30 pm</p>
-            <p>Direccion</p>
-            <a href="">Abrir mapa</a>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h2>Consideraciones</h2>
-        <p>
-          El color blanco y sus derivador son colores representativos de nuestro
-          día por lo que pedimos reservarlos exclusivamente para la novia.
-        </p>
-        <p>Este día tan importante amerita una vestimenta especial.</p>
-        <p><strong>FORMAL</strong></p>
-        <p>
-          Con el propósito de crear un ambiente íntimo y especial nuestra boda
-          está planeada
-        </p>
-        <p><strong>SOLO PARA ADULTOS</strong></p>
-        <p>Gracias por comprender y hacer este día único.</p>
-      </section>
-      <section>
-        <p>
-          El mejor regalo será contar con su presencia pero si desean contribuir
-          con nuestro nuevo comienzo, lo pueden hacer de la siguiente manera.
-        </p>
-        <h3>NU Banco</h3>
-        <div class="row">
-          <div class="col">
-            <h4>Mariana Ramírez Escalante</h4>
-            <p>CLABE: 638180010149579703</p>
-          </div>
-          <div class="col">
-            <h4>Josué López Olivares</h4>
-            <p>CLABE: 638180010166024257</p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h2>Galería de fotos</h2>
-        <img
-          src="img/_DSC3925.webp"
-          alt=""
-          width="150px"
-          height="auto"
-          loading="lazy"
-        />
-        <img
-          src="img/_DSC3969.webp"
-          alt=""
-          width="150px"
-          height="auto"
-          loading="lazy"
-        />
-        <img
-          src="img/_DSC4042.webp"
-          alt=""
-          width="150px"
-          height="auto"
-          loading="lazy"
-        />
-        <img
-          src="img/_DSC4080.webp"
-          alt=""
-          width="150px"
-          height="auto"
-          loading="lazy"
-        />
-        <img
-          src="img/_DSC4085.webp"
-          alt=""
-          width="150px"
-          height="auto"
-          loading="lazy"
-        />
-        <img
-          src="img/DSC3991.webp"
-          alt=""
-          width="150px"
-          height="auto"
-          loading="lazy"
-        />
-        <img
-          src="img/DSC04135.webp"
-          alt=""
-          width="150px"
-          height="auto"
-          loading="lazy"
-        />
-        <img
-          src="img/DSC04166.webp"
-          alt=""
-          width="150px"
-          height="auto"
-          loading="lazy"
-        />
-        <img
-          src="img/DSC04224.webp"
-          alt=""
-          width="150px"
-          height="auto"
-          loading="lazy"
-        />
-        <img
-          src="img/DSC04303.webp"
-          alt=""
-          width="150px"
-          height="auto"
-          loading="lazy"
-        />
-      </section>
-      <section>
-        <h2>Confirmación</h2>
-        <p>
-          Celebrar nuestro amor es un sueño hecho realidad y para que sea
-          perfecto te pedimos confirmar tu asistencia antes del:
-        </p>
-        <p><strong>15 de Enero 2025</strong></p>
-        <p>Después de esa fecha no nos será posible reservar tu lugar.</p>
-        <p>Gracias por tu comprensión y apoyo</p>
       </section>
 
-      <script src="script.js"></script>
+      <section class="padrinos">
+        <div class="padrinos-card">
+          <img
+            class="svg m-lg"
+            src="svg/wedding-rings-wedding-svgrepo-com.svg"
+            alt="Anillos de boda"
+          />
+          <h2 class="text-2xl m-lg">Nuestros padrinos</h2>
+          <div class="padrinos-carousel" data-carousel>
+            <button class="carousel-prev btn" data-carousel-button="prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-next btn" data-carousel-button="next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <ul data-slides>
+              <li class="slide" data-active>
+                <div class="carousel-item sponsor-card p-md">
+                  <h3 class="text-lg font-bold">Isabel Pelayo</h3>
+                  <h3 class="text-lg font-bold">&</h3>
+                  <h3 class="text-lg font-bold">Rafael Núñez</h3>
+                  <p>Padrinos de velación</p>
+                </div>
+              </li>
+              <li class="slide">
+                <div class="carousel-item sponsor-card">
+                  <h3 class="text-lg font-bold">Luz María Olivares</h3>
+                  <p>Madrina de anillos</p>
+                </div>
+              </li>
+              <li class="slide">
+                <div class="carousel-item sponsor-card">
+                  <h3 class="text-lg font-bold">Patricia Reyes</h3>
+                  <h3 class="text-lg font-bold">&</h3>
+                  <h3 class="text-lg font-bold">Saúl Olivares</h3>
+                  <p>Padrinos de arras</p>
+                </div>
+              </li>
+              <li class="slide">
+                <div class="carousel-item sponsor-card">
+                  <h3 class="text-lg font-bold">Conchita Galicia</h3>
+                  <p>Madrina de Lazo</p>
+                </div>
+              </li>
+              <li class="slide">
+                <div class="carousel-item sponsor-card">
+                  <h3 class="text-lg font-bold">Daniela Sánchez</h3>
+                  <p>Madrina de ramo</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="fecha p-lg">
+        <div class="fecha-container bg-secondary p-lg">
+          <h2 class="text-2xl m-lg text-primary">Sábado 5 de abril de 2025</h2>
+          <div class="event-cards-container">
+            <div class="event-card bg-primary text-light p-md">
+              <img
+                class="svg m-md"
+                src="svg/wedding-svgrepo-com.svg"
+                alt="Ícono ceremonia"
+              />
+              <h3 class="text-lg font-bold">Ceremonia</h3>
+              <p class="m-sm">1 pm</p>
+              <p class="m-sm">
+                5 de Mayo 1, Cuautlalpan, 56250 Villa Santiago Cuautlalpan, Méx.
+              </p>
+              <a
+                href="https://maps.app.goo.gl/gnDrtHq2QtAV8qxZ7"
+                target="_blank"
+                class="btn m-md"
+                >Abrir mapa</a
+              >
+            </div>
+            <div class="event-card bg-primary text-light p-md">
+              <img
+                class="svg m-md"
+                src="svg/cheers-toast-svgrepo-com.svg"
+                alt="Ícono recepción"
+              />
+              <h3 class="text-lg font-bold">Recepción</h3>
+              <p class="m-sm">2:30 pm</p>
+              <p class="m-sm">
+                Av. Gral. González Montecillo Manzana 010, Cuautlalpan, 56264
+                Montecillo, Méx.
+              </p>
+              <a
+                href="https://maps.app.goo.gl/Edh4V6x33Gt6S46b6"
+                target="_blank"
+                class="btn m-md"
+                >Abrir mapa</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="consideraciones p-lg">
+        <div class="consideraciones-container">
+          <h2 class="text-2xl m-lg">Consideraciones</h2>
+          <div class="max-w-lg mx-auto">
+            <p class="m-md">
+              El color blanco y sus derivados son colores representativos de
+              nuestro día por lo que pedimos reservarlos exclusivamente para la
+              novia.
+            </p>
+            <p class="m-md">
+              Este día tan importante amerita una vestimenta especial.
+            </p>
+            <p class="text-xl font-bold m-lg">FORMAL</p>
+            <div class="dress-code">
+              <img
+                class="svg"
+                src="svg/suit-and-tie-outfit-svgrepo-com.svg"
+                alt="Ícono traje"
+              />
+              <img
+                class="svg"
+                src="svg/evening-gown-fashion-dress-clothes-svgrepo-com.svg"
+                alt="Ícono vestido"
+              />
+            </div>
+            <p class="m-md">
+              Con el propósito de crear un ambiente íntimo y especial nuestra
+              boda está planeada
+            </p>
+            <p class="text-xl font-bold m-lg">SOLAMENTE ADULTOS</p>
+            <p class="m-md">Gracias por comprender y hacer este día único.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mesa-regalos p-lg">
+        <div class="mesa-regalos-container">
+          <img
+            class="svg m-lg"
+            src="svg/travel-svgrepo-com.svg"
+            alt="Ícono regalo"
+          />
+          <h2 class="text-2xl m-lg">Mesa de regalos</h2>
+          <div class="max-w-lg mx-auto text-center">
+            <p class="m-lg">
+              El mejor regalo será contar con su presencia pero si desean
+              contribuir con nuestro nuevo comienzo, lo pueden hacer de la
+              siguiente manera.
+            </p>
+            <h3 class="text-xl m-md">NU Banco</h3>
+            <!-- <img class="svg nu m-lg" src="svg/Nubank_logo_2021.svg" alt="Nu bank logo" /> -->
+            <img
+              class="svg nu m-lg"
+              src="svg/nubank_logo_icon_248348.svg"
+              alt="Nu bank logo"
+            />
+            <div class="bank-cards-container">
+              <div class="bank-card p-md">
+                <h4 class="font-bold">Mariana Ramírez Escalante</h4>
+                <p>CLABE: 638180010149579703</p>
+                <button class="copy-btn" data-clabe="638180010149579703">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+              <div class="bank-card p-md">
+                <h4 class="font-bold">Josué López Olivares</h4>
+                <p>CLABE: 638180010166024257</p>
+                <button class="copy-btn" data-clabe="638180010166024257">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="galeria p-lg">
+        <div class="galeria-container">
+          <h2 class="text-primary text-2xl m-lg">Galería de fotos</h2>
+          <div class="photo-carousel" id="photos-carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button next" data-carousel-button="next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <ul data-slides>
+              <li class="slide" data-active>
+                <img
+                  src="img/_DSC3925.webp"
+                  alt="Mariana y Josué"
+                  loading="lazy"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="img/_DSC3969.webp"
+                  alt="Mariana y Josué"
+                  loading="lazy"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="img/_DSC4042.webp"
+                  alt="Mariana y Josué"
+                  loading="lazy"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="img/_DSC4080.webp"
+                  alt="Mariana y Josué"
+                  loading="lazy"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="img/_DSC4085.webp"
+                  alt="Mariana y Josué"
+                  loading="lazy"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="img/DSC3991.webp"
+                  alt="Mariana y Josué"
+                  loading="lazy"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="img/DSC04135.webp"
+                  alt="Mariana y Josué"
+                  loading="lazy"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="img/DSC04166.webp"
+                  alt="Mariana y Josué"
+                  loading="lazy"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="img/DSC04224.webp"
+                  alt="Mariana y Josué"
+                  loading="lazy"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="img/DSC4048.webp"
+                  alt="Mariana y Josué"
+                  loading="lazy"
+                />
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="confirmar p-lg text-light">
+        <div class="confirmar-container">
+          <div class="text-overlay">
+            <h2 class="text-2xl m-lg">Confirmación</h2>
+            <div class="max-w-lg mx-auto text-center">
+              <p class="m-md">
+                Celebrar nuestro amor es un sueño hecho realidad y para que sea
+                perfecto te pedimos confirmar tu asistencia antes del:
+              </p>
+              <p class="text-xl font-bold m-lg">15 de Febrero de 2025</p>
+              <p class="m-md">
+                Después de esa fecha no nos será posible reservar tu lugar.
+              </p>
+              <p class="m-md">Gracias por tu comprensión y apoyo</p>
+              <a href="#" class="btn bg-secondary text-dark m-lg">Confirmar</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
