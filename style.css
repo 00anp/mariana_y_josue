@@ -8,6 +8,8 @@
   --color-text-light: #FAF6F1;
   --color-background: #FEFAE0;
   --color-overlay: rgba(44, 24, 16, 0.4);
+  --base-url: '/mariana_y_josue';
+
 
   /* Tipografía */
   --font-primary: 'Playfair Display', serif;
@@ -128,7 +130,7 @@ body {
 .hero {
   height: 100vh;
   min-height: -webkit-fill-available;
-  background-image: url('img/DSC4048.webp');
+  background-image: url('/mariana_y_josue/img/DSC4048.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -140,7 +142,7 @@ body {
 
 @media (orientation: landscape) {
   .hero {
-    background-image: url('img/_DSC4067.webp');
+    background-image: url('/mariana_y_josue/img/_DSC4067.webp');
   }
 }
 
@@ -194,7 +196,7 @@ body {
   max-width:95vh;
   height: 66vh;
   margin: 1rem auto;
-  background-image: url('img/DSC04303.webp');
+  background-image: url('/mariana_y_josue/img/DSC04303.webp');
   background-size: cover;
   background-position: center;
   border-radius: var(--border-radius-lg);
@@ -548,6 +550,12 @@ body {
   box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
 }
 
+.slide img {
+  content: '';
+  background-size: cover;
+  background-position: center;
+}
+
 .photo-carousel .slide[data-active] {
   opacity: 1;
   z-index: 1;
@@ -643,7 +651,7 @@ body {
   max-width:95vh;
   height: 85vh;
   margin: 1rem auto;
-  background-image: url('img/DSC04166.webp');
+  background-image: url('/mariana_y_josue/img/DSC04166.webp');
   background-size: cover;
   background-position: center;
   border-radius: var(--border-radius-lg);
