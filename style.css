@@ -31,7 +31,6 @@
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Reset y estilos base */
 * {
   margin: 0;
   padding: 0;
@@ -39,9 +38,7 @@
 }
 
 html {
-  /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
-  /* overflow-y: scroll; */
 }
 
 body {
@@ -52,18 +49,21 @@ body {
 }
 
 /* Utility Classes */
+/* Utility Classes */
 .container {
-  width: 100vw;
+  width: 100%;
   max-width: none;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .container > section {
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  overflow: hidden;
   padding: var(--spacing-lg) var(--spacing-md);
 }
 
@@ -83,8 +83,7 @@ body {
   border-bottom: 1px solid var(--color-secondary);
 }
 
-
-
+/* Clases de layout */
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
 .items-center { align-items: center; }
@@ -152,7 +151,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: var(--color-overlay); */
   z-index: 1;
 }
 
@@ -187,15 +185,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-lg) var(--spacing-md);
+  margin-bottom: 2rem;
 }
 
 .card-container {
   width: 90%;
   max-width:95vh;
   height: 66vh;
-  margin: auto;
+  margin: 1rem auto;
   background-image: url('img/DSC04303.webp');
   background-size: cover;
   background-position: center;
@@ -211,11 +209,13 @@ body {
   flex-direction: column;
   justify-content: start;
   text-align: center;
+  width: 90%;
   width: 435px;
   left: 50%;
   transform: translateX(-50%);
   text-shadow: 2px 2px 2px #000000;
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
+  padding-top: var(--spacing-lg);
 }
 
 /* Padrinos Section */
@@ -224,12 +224,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  padding: var(--spacing-xl) var(--spacing-md);
+  margin-bottom: 2rem;
 }
 
 .padrinos-card {
   width: 90%;
   max-width: 800px;
+  margin: 2rem auto;
+  padding: var(--spacing-lg);
   background-color: var(--color-primary);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
@@ -245,8 +248,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
-  margin-top: 2rem;
+  margin: 2rem auto;
   background-color: var(--color-secondary);
   padding: 2rem 0;
   border-radius: var(--border-radius-lg);
@@ -316,12 +318,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding: var(--spacing-xl) var(--spacing-md);
+  margin-bottom: 2rem;
 }
 
 .fecha-container {
   width: 90%;
   max-width: 1200px;
+  margin: 2rem auto;
   border-radius: var(--border-radius-lg);
   text-align: center;
   color: var(--color-text)
@@ -332,13 +336,14 @@ body {
   gap: var(--spacing-lg);
   justify-content: center;
   flex-wrap: wrap;
+  margin: 2rem auto;
 }
 
 .event-card {
   flex: 1;
   min-width: 280px;
   max-width: 400px;
-  min-height: 350px;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -383,13 +388,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding: var(--spacing-xl) var(--spacing-md);
+  margin-bottom: 2rem;
   background-color: var(--color-secondary);
 }
 
 .consideraciones-container {
   width: 90%;
   max-width: 800px;
+  margin: 2rem auto;
   background-color: var(--color-primary);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-lg);
@@ -416,7 +423,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding: var(--spacing-xl) var(--spacing-md);
+  margin-bottom: 2rem;
   background-color: var(--color-primary);
   color: var(--color-text-light);
 }
@@ -424,6 +432,7 @@ body {
 .mesa-regalos-container {
   width: 90%;
   max-width: 800px;
+  margin: 2rem auto;
   background-color: var(--color-secondary);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-lg);
@@ -481,22 +490,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: var(--spacing-md);
-  padding-bottom: 4rem;
+  padding: var(--spacing-xl) var(--spacing-md);
+  margin-bottom: 2rem;
 }
 
 .galeria-container {
   width: 90%;
   max-width: 800px;
+  margin: 2rem auto;
   background-color: var(--color-primary);
   min-height: 85vh;
   border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .photo-carousel {
@@ -626,15 +635,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-lg) var(--spacing-md);
 }
 
 .confirmar-container {
   width: 90%;
   max-width:95vh;
   height: 85vh;
-  margin: auto;
+  margin: 1rem auto;
   background-image: url('img/DSC04166.webp');
   background-size: cover;
   background-position: center;
@@ -651,6 +659,12 @@ body {
   margin-bottom: var(--spacing-md);
 }
 
+.confirmar .text-overlay {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 /* Estilo específico para el botón sobre fondo con imagen */
 .confirmar .btn {
   display: inline-block;
@@ -663,6 +677,8 @@ body {
   transition: all 0.3s ease;
   text-shadow: none; /* Removemos sombra del texto en el botón */
   font-weight: 700;
+  margin-top: auto;
+  margin-bottom: var(--spacing-xl);
 }
 
 .confirmar .btn:hover {
@@ -763,5 +779,140 @@ body {
   .carousel-dot {
     width: 8px;
     height: 8px;
+  }
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1024px) {
+  :root {
+    --spacing-xl: 3rem;
+    --spacing-lg: 1.75rem;
+  }
+
+  .container > section {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-xl: 2rem;
+    --spacing-lg: 1.5rem;
+    --spacing-md: 1rem;
+  }
+
+  .text-2xl { font-size: 1.5rem; }
+  .text-xl { font-size: 1.25rem; }
+  
+  .card-container,
+  .padrinos-card,
+  .fecha-container,
+  .consideraciones-container,
+  .mesa-regalos-container,
+  .galeria-container,
+  .confirmar-container {
+    width: 95%;
+    margin: 1rem auto;
+  }
+
+  .event-card {
+    min-width: 250px;
+    margin: 0.5rem;
+  }
+
+  .dress-code .svg {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container > section {
+    padding: var(--spacing-md) var(--spacing-sm);
+    margin-bottom: 1rem;
+  }
+
+  .text-2xl { font-size: 1.25rem; }
+  .text-xl { font-size: 1.1rem; }
+  .text-lg { font-size: 1rem; }
+
+  .card-container {
+    height: auto;
+    min-height: 50vh;
+  }
+
+  .padrinos-card {
+    padding: var(--spacing-md);
+  }
+
+  .event-card {
+    min-width: 200px;
+    padding: var(--spacing-md);
+  }
+
+  .bank-card {
+    min-width: 250px;
+    margin: 0.5rem;
+  }
+
+  .photo-carousel {
+    width: 95%;
+  }
+}
+
+/* Ajustes para modo paisaje en móviles */
+@media (max-height: 480px) and (orientation: landscape) {
+  .container > section {
+    min-height: 120vh;
+    padding: var(--spacing-md);
+  }
+
+  .card-container,
+  .confirmar-container {
+    height: auto;
+    min-height: 90vh;
+  }
+
+  .event-cards-container,
+  .bank-cards-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: var(--spacing-md);
+  }
+}
+
+/* Media queries para estas secciones */
+@media (max-width: 768px) {
+  .text-overlay {
+    width: 95%;
+    padding: var(--spacing-sm);
+    padding-top: var(--spacing-lg);
+  }
+
+  .card-container,
+  .confirmar-container {
+    width: 95%;
+  }
+
+  .confirmar .btn {
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .text-overlay {
+    padding-top: var(--spacing-md);
+  }
+
+  .card-container {
+    height: 60vh;
+  }
+
+  .confirmar-container {
+    height: 80vh;
+  }
+
+  .confirmar .btn {
+    margin-bottom: var(--spacing-md);
   }
 }
