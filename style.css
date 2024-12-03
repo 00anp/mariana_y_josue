@@ -868,14 +868,13 @@ body {
 }
 
 /* Ajustes para mejorar la compatibilidad con Safari iOS */
-.photo-carousel .slide picture {
+.photo-carousel .slide {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.photo-carousel .slide img,
-.photo-carousel .slide picture {
+.photo-carousel .slide img {
   display: block;
   width: 100%;
   height: 100%;
